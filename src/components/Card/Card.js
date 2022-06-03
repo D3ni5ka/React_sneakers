@@ -39,15 +39,11 @@ const Card = (props) => {
         <>
           {onPlus && (
             <div className={favorite} onClick={() => onClickFavorite()}>
-              <img
-                src={`img/heart-${
-                  isFavorite ? "liked" : "unliked"
-                }.svg`}
-              />
+              <img src={`img/heart-${isFavorite ? "liked" : "unliked"}.svg`} />
             </div>
           )}
 
-          <img width="100%" height={135} src={`/sneakers/${imageUrl}`} alt="" />
+          <img width="100%" height={135} src={`${imageUrl}`} alt="" />
           <h5>{title}</h5>
 
           <div className="d-flex justify-between align-center">
