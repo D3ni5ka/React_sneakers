@@ -61,7 +61,7 @@ const Drawer = ({ onClose, cartItems = [], onDeleteItem }) => {
                 <img
                   onClick={() => onDeleteItem(cart.id)}
                   className="removeBtn"
-                  src="img/btm-remove.svg"
+                  src="https://raw.githubusercontent.com/D3ni5ka/react_sneakers/571f0c73ea91c8e42af15832709c6749cd9de718/img/btm-remove.svg"
                   alt="Remove"
                 />
               </div>
@@ -75,7 +75,11 @@ const Drawer = ({ onClose, cartItems = [], onDeleteItem }) => {
                 ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
                 : "Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."
             }
-            image={isOrderComplete ? "img/zakaz.jpg" : "img/boxing.png"}
+            image={
+              isOrderComplete
+                ? "https://raw.githubusercontent.com/D3ni5ka/react_sneakers/gh-pages/img/zakaz.jpg"
+                : "ihttps://raw.githubusercontent.com/D3ni5ka/react_sneakers/gh-pages/img/boxing.png"
+            }
           />
         )}
 
@@ -101,7 +105,10 @@ const Drawer = ({ onClose, cartItems = [], onDeleteItem }) => {
             onClick={() => onClickOrder()}
           >
             Оформить заказ
-            <img src="img/arrow.svg" alt="Arrow" />
+            <img
+              src="https://raw.githubusercontent.com/D3ni5ka/react_sneakers/571f0c73ea91c8e42af15832709c6749cd9de718/img/arrow.svg"
+              alt="Arrow"
+            />
           </button>
         </div>
       </div>

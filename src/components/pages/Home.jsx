@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Card from "../Card/Card";
 
-
 const Home = ({
   items,
   onAddToCart,
@@ -10,8 +9,6 @@ const Home = ({
   onChangeSearchInput,
   isLoading,
 }) => {
-  
-
   const renderItems = () => {
     const filterItems = items.filter((elem) =>
       elem.title.toLowerCase().includes(searchValue.toLowerCase())
@@ -36,7 +33,10 @@ const Home = ({
           {searchValue ? `Поиск по "${searchValue}"` : "Все кроссовки"}
         </h1>
         <div className="search-block d-flex">
-          <img src="img/search.svg" alt="Search" />
+          <img
+            src="https://raw.githubusercontent.com/D3ni5ka/react_sneakers/571f0c73ea91c8e42af15832709c6749cd9de718/img/search.svg"
+            alt="Search"
+          />
           <input
             placeholder="Search"
             value={searchValue}
