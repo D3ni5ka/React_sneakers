@@ -136,7 +136,7 @@ function App() {
 
         <Routes>
           <Route
-            path=""
+            path="/react_sneakers/"
             element={
               <Home
                 items={items}
