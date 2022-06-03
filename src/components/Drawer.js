@@ -41,7 +41,7 @@ const Drawer = ({ onClose, cartItems = [], onDeleteItem }) => {
           <img
             onClick={onClose}
             className="removeBtn cu-p"
-            src="img/btm-remove.svg"
+            src="https://raw.githubusercontent.com/D3ni5ka/react_sneakers/f58e08dd40b7a39d3a73e3b2bba3f325e6441f37/img/btm-remove.svg"
             alt="Remove"
           />
         </h2>
@@ -78,7 +78,7 @@ const Drawer = ({ onClose, cartItems = [], onDeleteItem }) => {
             image={
               isOrderComplete
                 ? "https://raw.githubusercontent.com/D3ni5ka/react_sneakers/gh-pages/img/zakaz.jpg"
-                : "ihttps://raw.githubusercontent.com/D3ni5ka/react_sneakers/gh-pages/img/boxing.png"
+                : "https://raw.githubusercontent.com/D3ni5ka/react_sneakers/gh-pages/img/boxing.png"
             }
           />
         )}
