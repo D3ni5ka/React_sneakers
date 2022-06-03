@@ -41,7 +41,9 @@ const Card = (props) => {
             <div className={favorite} onClick={() => onClickFavorite()}>
               <img
                 src={
-                  isFavorite ? "img/heart-liked.svg" : "img/heart-unliked.svg"
+                  isFavorite
+                    ? "https://raw.githubusercontent.com/D3ni5ka/react_sneakers/3057cf2eeaa084aba8f1d641fb6e315938dd150a/img/heart-liked.svg"
+                    : "https://raw.githubusercontent.com/D3ni5ka/react_sneakers/3057cf2eeaa084aba8f1d641fb6e315938dd150a/img/heart-unliked.svg"
                 }
               />
             </div>
@@ -54,7 +56,7 @@ const Card = (props) => {
             <div className="d-flex flex-column">
               <span>Cost:</span>
               <b>{price} грн</b>
-            </div>``
+            </div>
 
             {onPlus && (
               <button
@@ -65,7 +67,9 @@ const Card = (props) => {
                 <img
                   width={30}
                   height={30}
-                  src={`img/btn-${isItemAdded(id) ? "checked" : "plus"}.svg`}
+                  src={`https://raw.githubusercontent.com/D3ni5ka/react_sneakers/3057cf2eeaa084aba8f1d641fb6e315938dd150a/img/btn-${
+                    isItemAdded(id) ? "checked" : "plus"
+                  }.svg`}
                   alt=""
                 />
               </button>
