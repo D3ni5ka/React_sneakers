@@ -39,7 +39,11 @@ const Card = (props) => {
         <>
           {onPlus && (
             <div className={favorite} onClick={() => onClickFavorite()}>
-              <img src={`img/heart-${isFavorite ? "liked" : "unliked"}.svg`} />
+              <img
+                src={
+                  isFavorite ? "img/heart-liked.svg" : "img/heart-unliked.svg"
+                }
+              />
             </div>
           )}
 
@@ -50,7 +54,7 @@ const Card = (props) => {
             <div className="d-flex flex-column">
               <span>Cost:</span>
               <b>{price} грн</b>
-            </div>
+            </div>``
 
             {onPlus && (
               <button
@@ -61,7 +65,7 @@ const Card = (props) => {
                 <img
                   width={30}
                   height={30}
-                  src={`/img/btn-${isItemAdded(id) ? "checked" : "plus"}.svg`}
+                  src={`img/btn-${isItemAdded(id) ? "checked" : "plus"}.svg`}
                   alt=""
                 />
               </button>
