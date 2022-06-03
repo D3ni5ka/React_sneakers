@@ -20,7 +20,9 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [favorites, setFavorites] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  console.log(cartItems);
+
+  console.log(items);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -134,7 +136,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path=""
             element={
               <Home
                 items={items}
@@ -148,7 +150,7 @@ function App() {
             }
           />
           <Route
-            path="/favorites"
+            path="favorites"
             element={
               <Favorite
                 onAddToFavorite={onAddToFavorite}
@@ -157,7 +159,7 @@ function App() {
             }
           />
 
-          <Route path="/orders" element={<Orders />} />
+          <Route path="orders" element={<Orders />} />
         </Routes>
 
         {cartOpened && (
